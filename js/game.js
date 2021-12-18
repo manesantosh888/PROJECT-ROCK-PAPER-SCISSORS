@@ -51,14 +51,14 @@ function verify(){
         }
            
         else if(number==1){
-            won.innerHTML = "you Lost.";
+            won.innerHTML = '<spam style="color: darkred;">you Lost.!<spam>';
             Opponent.innerHTML = "Paper";
             totalOponentWin++;
             OponentWinsE1.innerHTML = totalOponentWin;
         }
         
         else{
-            won.innerHTML = "congratulations you won!";
+            won.innerHTML = '<spam style="background-color: green; color:white">congratulations you won!<spam>';
             Opponent.innerHTML = "Scissors";
             totalUserWon++;
             userWonE1.innerHTML=totalUserWon;
@@ -82,7 +82,7 @@ function verify(){
         you.innerHTML = "Paper";
         
         if(number==0){
-            won.innerHTML = "congratulations you won!";
+            won.innerHTML = '<spam style="background-color: green; color:white">congratulations you won!<spam>';
             Opponent.innerHTML = "Rock";
             totalUserWon++;
             userWonE1.innerHTML=totalUserWon;
@@ -96,7 +96,7 @@ function verify(){
         }
         
         else{
-            won.innerHTML = "you Lost.";
+            won.innerHTML = '<spam style="color: darkred;">you Lost.!<spam>';
             Opponent.innerHTML = "Scissors";
             totalOponentWin++;
             OponentWinsE1.innerHTML = totalOponentWin;
@@ -118,14 +118,14 @@ function verify(){
         you.innerHTML = "Scissors";
         
         if(number==0){
-            won.innerHTML = "you Lost.";
+            won.innerHTML = '<spam style="color: darkred;">you Lost.!<spam>';
             Opponent.innerHTML = "Rock";
             totalOponentWin++;
             OponentWinsE1.innerHTML = totalOponentWin;
         }
            
         else if(number==1){
-            won.innerHTML = "congratulations you won!";          
+            won.innerHTML = '<spam style="background-color: green; color:white">congratulations you won!<spam>';      
             Opponent.innerHTML = "Paper";
             totalUserWon++;
             userWonE1.innerHTML=totalUserWon;           
