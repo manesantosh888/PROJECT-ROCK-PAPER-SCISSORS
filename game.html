@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\game.css">  
+    
+</head>
+<body onload="verify()">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand">RPS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutUs.html">AboutUs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+  
+    <div class="flex-container">
+        <div class="d-flex justify-content-center p-2 bg-info" style="margin-top:2% ;"><P>round :<span id="round"> 0</span></P></div>    
+        <div class="flex-info">          
+            <div class="info-1">
+                <p><span id="name1">You</span></p>
+                <p>Total wins : <span id="totalWon">0</span></p>            
+            </div>
+            <div class="info-1">
+                <p>Info</p>
+                <p>Ties : <span id="totalTies">0</span></p>
+            </div>
+            <div class="info-1">
+                <p>Rockstar</p>
+                <p>win : <span id="totalOponentWins">0</span></p>
+            </div>
+        </div>
+        <div class="flex-action">
+            <div class="action-1">
+                <div id="action-img-1" class="action-1">
+                   <spam id="spam-1"><img alt="count" src="images\count-down.gif" width="350"></spam>
+                </div>
+                <div class="action-1" >
+                    <button class="btn btn-primary" id="rock" onclick="onClickRock()">Rock</button>
+                    <button class="btn btn-secondary" id="paper" onclick="onClickPaper()">Paper</button>
+                    <button class="btn btn-info" id="scissors" onclick="onClickScissors()">Scissors</button>
+                </div>
+            </div>
+            <div id="action-img-2" class="action-1" style="margin: 5%;">
+                <p ><span id="name">You</span> : <span id="you"></span></p>
+                <p>Rockstar :<span id="Opponent"></span></p>
+                <P>Won : <span id="Won"></span></P>
+            </div>
+            <div class="action-1">
+                <span id="spam-2"><img alt="count" src="images\count-down.gif" width="350"></span> 
+            </div>
+        </div>
+
+    </div>
+    <Script src="js\game.js"></Script> 
+</body>
+</html>
