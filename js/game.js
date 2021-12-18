@@ -7,7 +7,9 @@ function verify(){
         let nm = sessionStorage.getItem("name");
         if(mail=="sam@indexnine.com" && pass=="sam123"){
             alert("welcome "+nm);
-            name.innerHTML=nm;
+                if(!(nm==null)){
+                        name.innerHTML=nm;
+                }
             name1.innerHTML=nm;
         }
         else {
