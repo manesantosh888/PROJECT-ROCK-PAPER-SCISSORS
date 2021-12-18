@@ -6,11 +6,11 @@ function verify(){
         let pass = sessionStorage.getItem("pass");
         let nm = sessionStorage.getItem("name");
         if(mail=="sam@indexnine.com" && pass=="sam123"){
-            alert("welcome "+nm);
-                if(!(nm==null)){
-                        name.innerHTML=nm;
-                }
-            name1.innerHTML=nm;
+             if(!(nm=="null")){
+                name.innerHTML=nm;
+                name1.innerHTML=nm;
+                alert("welcome "+nm);
+            }    
         }
         else {
         alert("Please Login First...");
