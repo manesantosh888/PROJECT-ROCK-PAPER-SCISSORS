@@ -1,0 +1,45 @@
+.flex-container{
+    flex-direction: column;
+    height:100%; 
+    display:flex;
+    align-items: center;  
+}
+.flex-info{
+    padding: .5em;
+    display:flex;
+    height:100%;
+    width: 60%;
+    flex-direction: row; 
+    align-content: center;
+    background-color: cadetblue;
+    margin-top:2%;
+    border: solid black;   
+}
+
+
+
+
+.flex-info .info-1{
+    align-content: center;
+    text-align: center;
+    width: 33.33%;
+    height: 33.33%;
+   
+}
+.flex-action{
+    display:flex;
+    height:100%;
+    width: 60%;
+    flex-direction: row; 
+    align-content: center;
+    background-color: gainsboro;
+    margin-top:2%;
+    border: solid black;
+}
+.flex-action .action{
+    align-content: center;
+    text-align: center;
+    width: 33.33%;
+    height: 33.33%;
+    padding: 10%;
+}
