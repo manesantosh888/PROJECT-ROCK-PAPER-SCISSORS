@@ -12,7 +12,7 @@ function verify(){
         }
         else {
         alert("Please Login First...");
-        window.location.href = "https://santoshmane101.github.io/PROJECT-ROCK-PAPER-SCISSORS/index.html";
+        window.location.href = "index.html";
         }
     }
  
