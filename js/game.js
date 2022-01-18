@@ -5,8 +5,10 @@ function verify(){
         let mail = sessionStorage.getItem("email");
         let pass = sessionStorage.getItem("pass");
         let nm = sessionStorage.getItem("name");
+        // Review -  use ===
         if(mail=="sam@indexnine.com" && pass=="sam123"){
-             if(!(nm=="null")){
+             // Review - Wrong condition check, check for standard solutions
+                if(!(nm=="null")){
                 name.innerHTML=nm;
                 name1.innerHTML=nm;
                 alert("welcome "+nm);
@@ -51,7 +53,7 @@ function verify(){
             totalTIes++;
             TiesE1.innerHTML=totalTIes;
         }
-           
+           // Review - use ===
         else if(number==1){
             won.innerHTML = '<spam style="color: darkred;">you Lost.!<spam>';
             Opponent.innerHTML = "Paper";
